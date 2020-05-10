@@ -30,13 +30,13 @@ Again (as last week), open the file `R/exercise.R` in your favorite text editor.
 - a) Create a variable called `a` that contains the numbers from 1 to 100.
 - b) Find out what the mode of `a` is and assign it to `b`.
 - c) Coerce `a` to be a character vector and assign it to `c`.
-- d) Find out what the mode of `b` is and assign it to `c`
+- d) Find out what the mode of `b` is and assign it to `d`
 - e) Write a sentence of your choice and assign it to `e`.
 - f) Why is `length(e)` not the length of the sentence, but 1?
 - g) Coerce the sentence to a numeric vector and assign it to `g`. Write a comment on what you observed.
 - h) The function `runif(n)` generates `n` random numbers between 0 and 1. I have used this function to create the 1000 numbers in the variable called `h0`. Define a vector `h`, such that it *only* contains the numbers that can be converted safely to a character and back, resulting in the same number.
 - i) The variables `i0` and `i1` are already defined in your exercise file. `i0` defines a sentence (taken from Wikipedia) and `i1` a list of (simplified) part of speech tags. We are interested in the average length of a word of a certain part of speech tag. Define a new variable `i2` that contains a list of the lengths of the words in `i0`. The function you can use here is `nchar()`. Turn `i1` into a factor and assign it to variable `i3`. Now use `tapply()` to find this out and assign this result to `i`.
-- k) What's the type of `i`? (assign it to `k`)
+- k) What's the mode of `i`? (assign it to `k`)
 
 ## Step 4
 Your file `R/exercise.R` should now contain a number of lines with assignment statements (using `=`, `<-`, or `->`). Don't forget to save your file.

@@ -3,37 +3,42 @@ library(testthat)
 source("R/exercise.R")
 
 # a
-expect_equal(a, 5)
-expect_length(a, 1)
+expect_equal(a, 1:100)
+expect_length(a, 100)
 
 # b
 expect_length(b, 1)
-expect_equal(b, "Hello")
+expect_equal(b, "numeric")
 
 # c
-expect_length(c, 5)
+expect_length(c, 100)
+expect_equal(c[5], "5")
+expect_equal(c[71], "71")
 
 # d
-expect_length(d, 1000)
-expect_equal(d, 1:1000)
+expect_length(d, 1)
+expect_equal(d, "character")
 
 # e 
-expect_length(e, 1000)
-expect_equal(e[50:52], c(TRUE,FALSE,TRUE))
+expect_equal(mode(e), "character")
+expect_length(e, 1)
 
 # f
-expect_length(f, 500)
-expect_equal(f[100:105], seq(200,210,by=2))
 
 # g 
+expect_equal(mode(g), "numeric")
 expect_length(g, 1)
-expect_equal(g, 500)
+expect_equal(g[1], NA)
 
 # h 
-expect_length(h, 1)
-expect_equal(h, 501)
+expect_length(h, 7)
+expect_vector(h)
+expect_equal(h[2], 0.7517155)
 
 # i
-expect_length(i, 12)
-expect_equal(i, c("Documentation", "is", "a", "love", "letter", "that", "you", "write", "to", "your", "future", "self"))
+expect_length(i, 8)
+expect_equal(h[1],1)
+expect_equal(h[3],3.5)
 
+# k
+expect_equal(k,"numeric")
