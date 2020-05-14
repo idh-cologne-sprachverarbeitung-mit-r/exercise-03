@@ -28,3 +28,37 @@ h0 <- c(0.763226370327175, 0.952643654774874, 0.378943434683606, 0.0164877194911
 i0 <- c("Kölsch","ist","ein","helles",",","blankes","(","gefiltertes",")","und","obergäriges","Vollbier","mit","einer","durchschnittlichen","Stammwürze","von","11,3","°P","und","einem","Alkoholgehalt","von","durchschnittlich","4,8","%",".")
 
 i1 <- c("N","V","D","A",".","A",".","A",".","K","A","N","P","D","A","N","P","C","N","K","D","N","P","A","C","N",".")
+
+# a) 
+a <- 1:100
+
+# b) 
+b <- mode(a)
+
+# c) 
+c <- as.character(a)
+
+# d) 
+d <- mode(b)
+
+# e) 
+e <- 'Mode of b is character'
+
+# f) length(e) is 1 because the whole sentence is one unit as a whole. For counting  the words in the sentence or finding the length of the sentence you have to break every word into character strings. Then you can count all character strings.
+
+# g) 
+g <- as.numeric(e)
+# There appears a warning saying it created NAs instead numerics. 
+
+# h) 
+h <- as.character(h0)
+h <- as.double(h)
+
+# i) 
+i2 <- nchar(i0)
+i3 <- factor (i1)
+i <- tapply(i2, i3, mean)
+
+# k) 
+k <- mode(i) 
+# Mode of i is numeric.
