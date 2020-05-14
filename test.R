@@ -37,8 +37,8 @@ expect_equal(h[2], 0.7517155)
 
 # i
 expect_length(i, 8)
-expect_equal(h[1],1)
-expect_equal(h[3],3.5)
+expect_equal(i[1],1)
+expect_equal(i[3],3.5)
 
 # k
 expect_equal(k,"numeric")
