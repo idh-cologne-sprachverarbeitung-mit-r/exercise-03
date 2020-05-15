@@ -47,7 +47,7 @@ e <- 'Mode of b is character'
 # f) length(e) is 1 because the whole sentence is one unit as a whole. For counting  the words in the sentence or finding the length of the sentence you have to break every word into character strings. Then you can count all character strings.
 
 # g) 
-# g <- as.numeric(e)
+g <- as.numeric(e)
 # There appears a warning saying it created NAs instead numerics. 
 
 # h) 
