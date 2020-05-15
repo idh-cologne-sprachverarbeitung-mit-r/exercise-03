@@ -62,3 +62,4 @@ i <- tapply(i2, i3, mean)
 # k) 
 k <- mode(i) 
 # Mode of i is numeric.
+
