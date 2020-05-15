@@ -23,8 +23,30 @@ h0 <- c(0.763226370327175, 0.952643654774874, 0.378943434683606, 0.0164877194911
 0.839809884084389, 0.551455266773701, 0.935782446758822, 0.840460516046733, 
 0.727259814506397, 0.283441427862272, 0.199344577966258, 0.483388318214566, 
 0.986643178621307, 0.997125167865306, 0.133521297946572, 0.408241145079955)
-
-
 i0 <- c("Kölsch","ist","ein","helles",",","blankes","(","gefiltertes",")","und","obergäriges","Vollbier","mit","einer","durchschnittlichen","Stammwürze","von","11,3","°P","und","einem","Alkoholgehalt","von","durchschnittlich","4,8","%",".")
-
 i1 <- c("N","V","D","A",".","A",".","A",".","K","A","N","P","D","A","N","P","C","N","K","D","N","P","A","C","N",".")
+a <-seq(1,100, by=1)
+mode(a)
+b <- mode(a)
+a <- as.character(a)
+c <- mode(a)
+mode(b)
+d <- mode(b)
+e <- "The big tree"
+# length(e) is not the length of the sentence but 1, because it looks at the length of the vector, which is 1.
+g <- as.numeric(e)
+# Eine Warnmeldung taucht auf, die mich warnt, dass NAs durch die Umwandlung erzeugt wurden.
+as.character(h0)
+as.numeric(h0)
+h <-as.numeric(h0)
+i2 <- nchar(i0)
+i3 <- as.factor(i1)
+i <- tapply(i2,i3,mean)
+mode(i)
+k <- mode(i)
+
+
+
+
+
+
