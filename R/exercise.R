@@ -28,3 +28,43 @@ h0 <- c(0.763226370327175, 0.952643654774874, 0.378943434683606, 0.0164877194911
 i0 <- c("Kölsch","ist","ein","helles",",","blankes","(","gefiltertes",")","und","obergäriges","Vollbier","mit","einer","durchschnittlichen","Stammwürze","von","11,3","°P","und","einem","Alkoholgehalt","von","durchschnittlich","4,8","%",".")
 
 i1 <- c("N","V","D","A",".","A",".","A",".","K","A","N","P","D","A","N","P","C","N","K","D","N","P","A","C","N",".")
+
+# Assignments
+
+a <- 1:100
+
+b <- mode(a)
+
+c <- as.character(a)
+
+d <- mode(b)
+
+e <- "Oh sphinx of black quartz judge my vow"
+
+# f) A string literal like above implicitly creates a character vector with one
+# element, whereas `length` returns the length of the vector, not of the sole
+# element in it. One can show that "foo" returns a vector of length 1 via
+# `c("foo") == "foo"`
+
+# g) Casting my sentence above will return a vector of length 1 containing a
+# "missing value" (`is.na(x) == TRUE`) as the sole element can't be parsed as a
+# numeric value. A character vector like `c("42", "23")` would return `c(42, # 23)`
+
+g <- as.numeric(e)
+
+# h)To be honest I'm not sure what I'm supposed to do in this exercise. Converting
+# h0 to a character vector works out fine, but converting it back loses
+# precision for all numbers (`as.numeric(as.character(h0))`). That vector is
+# also equal to `h0`, which indicates that R is somehow downgrading the
+# precision of `h0` in equality comparisons.
+
+# The test suite tells me that only seven numbers are expected to make the
+# roundtrip without loss (I guess floating point issues?), but I'm at a loss on
+# how to create such a vector on my machine.
+
+# i)
+i2 <- nchar(i0)
+i3 <- factor(i1)
+i <- tapply(i2, i3, mean)
+
+k <- mode(i)
