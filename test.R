@@ -28,7 +28,7 @@ expect_length(e, 1)
 # g 
 expect_equal(mode(g), "numeric")
 expect_length(g, 1)
-expect_equal(g[1], NA)
+expect_true(is.na(g[1]))
 
 # h 
 expect_length(h, 7)
