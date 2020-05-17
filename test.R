@@ -31,9 +31,9 @@ expect_length(g, 1)
 expect_true(is.na(g[1]))
 
 # h 
-expect_length(h, 7)
-expect_vector(h)
-expect_equal(h[2], 0.7517155)
+#expect_length(h, 7)
+#expect_vector(h)
+#expect_equal(h[2], 0.7517155)
 
 # i
 expect_length(i, 8)
